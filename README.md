@@ -31,10 +31,10 @@ ______
 
 ## Wireframes :
 voici les wireframes, elles sont simples, c'est parce que le rendu visuel attendu n'est pas important dans un premier temps :
-![wireframe1](./React-1.png)
-![wireframe2](./React-2.png)
-![wireframe3](./React-3.png)
-![wireframe4](./React-4.png)
+![wireframe1](./unicorn-blog/assets/img/React-1.png)
+![wireframe2](./unicorn-blog/assets/img/React-2.png)
+![wireframe3](./unicorn-blog/assets/img/React-3.png)
+![wireframe4](./unicorn-blog/assets/img/React-4.png)
 
 
 ## API
