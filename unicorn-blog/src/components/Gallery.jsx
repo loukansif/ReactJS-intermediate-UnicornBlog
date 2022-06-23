@@ -3,35 +3,38 @@
 import React, { useState, useEffect } from "react";
 import { Link, Outlet } from 'react-router-dom';
 
-const Articles = () => {
-  const [articles, setArticles] = useState([]);
+const Gallery = () => {
+  const [gallery, setGallery] = useState([]);
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts")
+    fetch("https://jsonplaceholder.typicode.com/photos")
       .then((response) => {
         return response.json();
       })
       .then((result) => {
-        setArticles(result);
+        setGallery(result);
       });
   }, []);
+
   let count = 0;
   return (
-    <div className="Articles">
-      {articles.map((article) => {
+    <div className="Gallery">
+      {
+      gallery.map((photo) => {
         if (count === 20) {
           return null;
         }
         count++;
         return (
-          <div className="Article" key={article.id}>
-            <h4>{article.title}</h4>
-            <p>{article.body.substring(0, 60)}... <a>afficher la suite</a></p>
+          <div className="Picture" key={photo.id}>
+            <h3>{photo.title}</h3>
+            <img src={photo.thumbnailUrl} alt="" />
           </div>
         );
-      })}
+      })
+      }
     </div>
   );
 };
 
-export default Articles;
+export default Gallery;

@@ -1,66 +1,66 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .Header {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-  background-color: #61dafb;
+  background-color: #6059bd;
+  position: fixed;
+  width: 100%;
+  height: 60px;
 }
 
-.Header nav ul {
+.Header a {
+  text-decoration: none;
+  color: white;
+}
+
+.logoMatrice {
+  width: 180px;
+}
+
+.HeaderLinks {
+  width: 30%;
   display: flex;
-}
-
-.Header nav ul li {
-  margin-left: 70px;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 25px;
 }
 
 .Articles {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
 }
 
 .Article {
-  width: 40%;
+  width: 400px;
+  background-color: #ffd138;
+  border-radius: 15px;
+  margin-top: 15px;
+  padding-bottom: 40px;
+}
+
+.Gallery {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.Picture {
+  width: 400px;
+  background-color: #ffd138;
+  border-radius: 15px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+
+.Article a {
+  color: blue;
 }
