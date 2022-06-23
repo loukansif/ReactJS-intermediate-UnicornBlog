@@ -40,7 +40,7 @@
   background-color: #ffd138;
   border-radius: 15px;
   margin-top: 15px;
-  padding-bottom: 40px;
+  padding: 0 30px 20px;
   box-shadow: 8px 8px 12px #aaa;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .Upload {
-  margin:auto;
+  margin: auto;
   width: 550px;
   padding-top: 100px;
 }
@@ -77,14 +77,23 @@
   background-color: #ffd138;
   padding: 45px;
   border-radius: 25px;
-  box-shadow: 8px 8px 12px 
-#aaa;
+  box-shadow: 8px 8px 12px #aaa;
 }
 
 .send-btn {
-  background-color: #6059BD;
-    color: white;
-    font-size: 16px;
-    padding: 8px;
-    margin-top: 10px;
+  background-color: #6059bd;
+  color: white;
+  font-size: 16px;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+.Comments {
+  width: 400px;
+  background-color: darkgray;
+  margin-top: 15px;
+  padding: 0 30px 20px;
+  border-radius: 15px;
+  text-align: justify;
+  margin-bottom: 30px;
 }

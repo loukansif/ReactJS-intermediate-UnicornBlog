@@ -26,7 +26,7 @@ const App = () => {
           <Route path="/" element={<Articles />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/upload" element={<Upload />} />
-          <Route path="/article" element={<Article />} />
+          <Route path="/:id" element={<Article />} />
       </Routes>
     </div>
   );

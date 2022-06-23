@@ -1,7 +1,5 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Articles = () => {
   const [articles, setArticles] = useState([]);
@@ -26,7 +24,10 @@ const Articles = () => {
         return (
           <div className="Article" key={article.id}>
             <h4>{article.title}</h4>
-            <p>{article.body.substring(0, 60)}... <a>afficher la suite</a></p>
+            <p>
+              {article.body.substring(0, 60)}...{" "}
+              <Link to={"/"+article.id}>afficher la suite</Link>
+            </p>
           </div>
         );
       })}
